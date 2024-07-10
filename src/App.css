@@ -1,0 +1,347 @@
+/* App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.horiz {
+  text-align: right;
+}
+
+.current-time {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #666;
+}
+
+.date-navigation button {
+  background-color: #979797;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin-right: 3px;
+  margin-top: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.date-navigation button:hover {
+  background-color: #727272;
+}
+
+.date-navigation button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+.progress-container {
+  margin-bottom: 10px;
+}
+
+.progress-label {
+  margin-bottom: 5px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #ddd;
+  height: 20px;
+  margin-top: 5px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  text-align: right;
+  padding-right: 5px;
+  line-height: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #e9e9e9;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.centerize {
+  text-align: center;
+}
+
+table td input[type="checkbox"] {
+  margin: 0 auto; 
+  display: block; 
+}
+
+.gray {
+  color: #bcbcbc;
+}
+
+.margin {
+  margin: 50px 0 30px 0;
+}
+
+.margin_a {
+  margin: 30px 0 0px 0;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+  padding: 20px 0 15px 0;
+  background: linear-gradient(to bottom,
+  rgba(240, 240, 240, 1) 10%,
+  rgba(240, 240, 240, 1) 80%,
+  rgba(240, 240, 240, 0.2) 90%
+);
+}
+
+.alignright {
+  align-items: right;
+}
+
+.margin_a a{
+  color: rgb(81, 81, 81);
+  cursor: pointer;
+  
+}
+
+.margin_a a:hover{
+  color: green;
+}
+
+.margin p{
+  user-select: none;
+}
+
+/* 과제 부분 */
+.assignments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* 박스 간격 조절 */
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.assignment-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.assignment-info {
+  flex: 1;
+}
+
+.assignment-box h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.assignment-box p {
+  margin: 8px 0;
+  color: #666;
+}
+
+.assignment-box p strong {
+  color: #333;
+}
+
+.assignment-box p span {
+  color: #666;
+}
+
+.assignment-box p br {
+  margin-bottom: 8px; /* 줄바꿈 간격 조절 */
+}
+.dday-box {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 1.5em;
+  text-align: center;
+  min-width: 80px;
+}
+
+.green {
+  background-color: rgb(0, 205, 0);
+}
+
+.orange {
+  background-color: rgb(255, 174, 24);
+}
+
+.red {
+  background-color: rgb(255, 98, 98);
+}
+
+.day_font {
+  font-size: larger;
+  font-weight: 700;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed-button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-close-button {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn_container {
+  display: grid;
+  margin: 30px 0 10px 0;
+  grid-template-columns: repeat(1, 1fr); /* 두 개의 열을 가진 그리드를 생성 */
+  gap: 10px; /* 그리드 아이템 간의 간격 */
+}
+
+.btn {
+  width: 200px;
+  height: 50px; /* 정사각형 모양을 위해 높이를 넓이와 동일하게 설정 */
+  margin: 5px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 100px;
+  font-weight: bold;
+}
+
+.btn_site1 {
+  background-color: #007bff; /* 사이트 1 버튼의 배경색 */
+}
+
+.btn_site2 {
+  background-color: #28a745; /* 사이트 2 버튼의 배경색 */
+}
+
+.btn_site3 {
+  background-color: #dc3545; /* 사이트 3 버튼의 배경색 */
+}
+
+.btn_site4 {
+  background-color: #ffc107; /* 사이트 4 버튼의 배경색 */
+}
+
+.btn_site5 {
+  background-color: #17a2b8; /* 사이트 5 버튼의 배경색 */
+}
+
+.btn:hover {
+  filter: brightness(80%); /* 마우스 오버 시 색상 어둡게 */
+  transition: 0.3s ease;
+}
+
+.btn_container span {
+  text-align: right;
+  position: absolute;
+  right: 75px;
+}
+
+.margin-right {
+  position: absolute;
+  left: 65px;
+}
+
+.margin-left {
+  margin-left:10px;
+  margin-top: 0px;
+  color: #3b3b3b;
+}
